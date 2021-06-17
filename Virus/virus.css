@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css?family=Pirata+One');
+@import url('https://fonts.googleapis.com/css?family=Revalia');
+@import url('https://fonts.googleapis.com/css?family=Khand');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+ 
+
+.dude{
+  position:absolute;
+bottom:0%;
+  top:0%;
+  left:0%;
+  right:0%;
+
+  height:100%;
+  width:100%;
+
+  z-index:6;
+}
+
+body{background-color:black;}
+
+
+.trigger{ 
+  cursor:pointer;
+  position:fixed;
+  top:0px;
+  left:0px;
+  height:100%;
+  width:100%;
+  overflow:hidden;
+  background-size:cover;
+
+  background-position: 0% 0;
+  opacity:1;
+  z-index:5;
+  background-image:url();
+  background-size:100% 100%;
+  background-repeat: no-repeat;}
+
+.trigger.clicked {
+ cursor:default;
+}
+
+
+
+
+.videotrigger{
+  position:absolute;
+  margin:auto auto;
+  top:0%;
+  bottom:0%;
+  left:0%;
+  right:0%;
+  height:100%;
+  width:100%;
+}
+
+.trigger.clicked .layout{
+  cursor:default;
+     animation-name:lay;
+    animation-duration:1s;
+  animation-timing-function: ease-out;
+  animation-delay: 24s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+
+@keyframes lay{
+  0%{opacity:0;}
+  100%{opacity:0;}
+}
+
+a{
+text-decoration: none;
+   color:#37eb2f; 
+}
+
+.virus1{
+   z-index:4;
+  position:absolute;
+   margin: auto auto;
+  bottom:0%;
+  left:0%;
+  right:0%;
+  filter:brightness(45%);
+}
+
+
+.title {
+  position:absolute;
+   margin: auto auto;
+  bottom:300px;
+  left:0px;
+  right:0px;
+  font-family: 'Pirata One', cursive; 
+  font-size:125px;
+  width:20px;
+  color:#37eb2f; 
+  text-shadow:0 2px 2px #000;
+  z-index:2;
+ }
+
+.layout{
+   cursor:pointer;
+  position:fixed;
+  top:0px;
+  left:0px;
+  height:100%;
+  width:100%;
+  overflow:hidden;
+  background-size:cover;
+  background-color:black;
+  background-position: 0% 0;
+  opacity:0;
+  z-index:7;
+  background-image:url();
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+
+
+
+.zaria{
+  position:absolute;
+   margin: auto auto;
+  bottom:30%;
+  max-height: 40%;
+  left:0%;
+  right:0%;
+  z-index:3;
+  filter:brightness(80%);
+  transform: scale(0);
+}
+
+.trigger.clicked .zaria{
+      animation-name:zar-ani;
+    animation-duration:8s;
+  animation-timing-function: ease-out;
+  animation-delay: 30s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+
+@keyframes zar-ani{
+  0%{bottom:30%;
+   transform: scale(0);}
+  100%{bottom:50%;
+   transform: scale(1);}
+}
+
+
+
+.layout3{ 
+  cursor:default;
+  position:absolute;
+  margin:auto auto;
+  top:0%;
+  left:0%;
+  right:0%;
+  bottom:0%;
+  height:100%;
+  width:100%;
+  overflow:hidden;
+  background-size:cover;
+  color:white;
+ 
+  opacity:1;
+  z-index:50;
+ 	background: url(https://steamuserimages-a.akamaihd.net/ugc/914673076766023361/2549D67C5E45483F7FE4E1C46F22362B8F37637A/) no-repeat center center fixed; 
+  	background-size: cover;}
+
+.trigger.clicked .layout3{
+  opacity:0;
+  z-index:0;
+}
+
+
+
+.body {
+  
+    top:0px;
+  left:0px;
+  height:100%;
+  width:100%;
+  overflow:hidden;
+  background-size:cover;
+  position:absolute;
+background-image: url('https://i.imgur.com/7Y7blFz.jpg');
+  background-size:100% 100%;
+overflow:hidden;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size:cover;
+cursor:url(http://media.tumblr.com/d867d8c0827140bcce868f3bdbbd5e4f/tumblr_inline_mwwd9dv65Z1srowmh.png), auto !important;
+z-index:20;
+opacity:0;}
+
+
+
+.trigger.clicked .body{
+        animation-name:body-ani;
+    animation-duration:4s;
+  animation-timing-function: ease-out;
+  animation-delay: 24s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+ 
+@keyframes body-ani{
+  0%{opacity:0;
+  z-index:20;}
+  100%{opacity:1;
+  z-index:9999;}
+}
+
+
+.virus {position:fixed; bottom:60px; left:0px; right:0px; margin:auto;
+width:450px; border-radius:0 100px 0 100px; border:2px solid #000;}
+.virus img {width:450px; border-radius:0 100px 0 100px;}
+ 
+.box {
+position:fixed; bottom:100px; left:0px; right:0px; margin:auto; overflow:hidden; width:300px; z-index:400;
+background-color:#000; height:130px; padding:20px; opacity:0.2;
+color:#ccc; font-size:10px; font-family: 'Khand', sans-serif;
+transition: all 0.4s ease-in-out;
+-moz-transition: all 0.4s ease-in-out;
+-webkit-transition: all 0.4s ease-in-out;
+}
+.box:hover {opacity:1.7;
+transition: all 0.4s ease-in-out;
+-moz-transition: all 0.4s ease-in-out;
+-webkit-transition: all 0.4s ease-in-out;
+}
+ 
+.avatar {position:fixed; bottom:45px; left:0px; right:0px; margin:auto; width:500px;}
+.avatar img {float:right; border-radius:100%; width:110px;border:3px solid #000; border-radius:100%; }
+ 
+::-webkit-scrollbar { width: 1px; height: 1px; background: #;}
+::-webkit-scrollbar-thumb { background-color: #1; -webkit-border-radius: 2px; border-radius: 1px;}
+ 
+a.cut span {position:fixed; bottom:280px; left:0px; right:0px; margin:auto; margin:auto; display:none; padding:15px; z-index:401;}
+a.cut:hover span {position:fixed; display:inline; background-color:#000; border:solid red 2px;
+color:#555; font-size:10px; letter-spacing:1px; font-family: 'Khand', sans-serif; opacity: 0.9; width:250px; text-align:center;}
+ 
+
+
+
+.hovers{
+  
+}
+
+span{
+  text-decoration: underline;
+  margin: 5px;
+}

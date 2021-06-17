@@ -1,0 +1,5 @@
+
+
+fetch('http://example.com/movies.json')
+  .then(response => return res.text();
+  .then(data => $('body').append(data);;
